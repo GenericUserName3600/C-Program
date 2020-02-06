@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/impacs/sec26/Documents/Assignment_Final/C Assignment 3/definitions.h
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+
+/impacs/sec26/Documents/Assignment_Final/C Assignment 3/main.c
+definitions.h
+/impacs/sec26/Documents/Assignment_Final/C Assignment 3/definitions.h
+

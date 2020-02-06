@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/C_Assignment_3.dir/main.c.o CMakeFiles/C_Assignment_3.dir/functions.c.o CMakeFiles/C_Assignment_3.dir/print.c.o CMakeFiles/C_Assignment_3.dir/traverse.c.o  -o C_Assignment_3 

@@ -1,0 +1,28 @@
+README FILE for C Assignment 12/12/2019
+This readme is here to document, describe and explain what every file contains and does for my program.
+
+Included files:
+Main.c, traverse.c, functions.c, print.c, definitions.h and this README
+
+
+Main.c:
+The first file, that being main.c, is responsible for handling the menus of the program. Whether it is the main menu itself, or the sub menus included within the main menu, the main.c file handles all the passing of values, types and pointers to the other functions located in the other files. The other job of this main.c file is to accept the file name input from the user, and store it for whenever the program needs to use it. 
+The building of this file was quite simple, as it only required the use of simply c syntax as it was only menu inputs and function passing. When opening the file, you'll easily identify how i used multiple switch statements to control the menu. In addition to the switch statements, i also make use of alot of scan statements here to gain input from the user as that is how i gain input from the user through the commamnd line.
+
+traverse.c:
+The traverse.c file contains two functions that are responsible for either searching based on a inputted ID number or a inputted boat class name. The first function, that being searching based on ID number checks either the left or right node of the currently selected node, checks if it not NULL. and then acts accordings. If the left node is not NULL, the function is called again after the node has been moved one to the left. if the ID number matches the id number of the currently selected node, then that node is printed out. And finally, if the right node is not NULL, the function is called again after the node has been moved one to the right.
+The second function, that being the searching based on boat class name, acts basically the same as the first function however, it used strcmp to check if the boat name of the currently selected node matches to that of the inputted boat name, if it matches, the whole node is printed out. If it does not match, then based on the node's position, the function is called again, with the node being moved either left or right beforehand.
+
+functions.c:
+The function.c file contains four functions, three of which come together to make the functionality behind reading, getting  and adding the information from a file into a binary tree. The first function would be the writing to file function. As the name would suggest, the function's job is to write what the user inputs through the main menu in main.c and append it to the end of the file. Therefore for this function, i used alot of fprintf statements to achieve this, and have it so that it appends the new members to the end of the file.
+The second function is part of the three functions that come together to make the program's main functionality. The add_member_node function is responsible for taking passed current node location and a new node, and comparing the family names of both, and then adding the node in which family name comes first in the alphabeit to the tree first. This is achieved through using strcmp, and then checking if the nodes next to the current node are NULL in which to add the node into. 
+The thrid function is again part of the three functions. The read_membership_node is responsible for reading the contents of the file and adding it into the program, for it then to be passed to the add_member_node function, for it to then be added to the binary search tree. 
+The forth function is the final part of the three functions. The get_membership_node is responsible for getting the membership nodes from the bniary tree, either adding them back into the tree or simply returns the top of the tree of the program to use within another function.
+
+print.c:
+The print_membership function simply calls the other function in the file, while also passing the node into the function aswell.
+The other function in this file is responsible for printing out nodes as it processes through the search tree. It prints out all the details of the members within the program, however it also can pass the node left or right based on if the node is not empty.
+
+definition.h:
+This definition.h file contains all the function definition calls, and the struct of which the binary tree is made out of. it contains the information like family name, personal name, email address, membership id, class of boat, boat name for the members. While also containing pointers for left and right nodes.
+
