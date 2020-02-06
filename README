@@ -4,6 +4,8 @@ This readme is here to document, describe and explain what every file contains a
 Included files:
 Main.c, traverse.c, functions.c, print.c, definitions.h and this README
 
+Important Information:
+To run the overall project, you will need to download tbe project, and open it in either visual studio or Clion.
 
 Main.c:
 The first file, that being main.c, is responsible for handling the menus of the program. Whether it is the main menu itself, or the sub menus included within the main menu, the main.c file handles all the passing of values, types and pointers to the other functions located in the other files. The other job of this main.c file is to accept the file name input from the user, and store it for whenever the program needs to use it. 
